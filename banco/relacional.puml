@@ -1,0 +1,48 @@
+@startuml
+entity "User" {
+    +user_id: INT
+    ---
+    username: VARCHAR
+    email: VARCHAR
+    password: VARCHAR
+}
+
+entity "Project" {
+    +project_id: INT
+    ---
+    project_name: VARCHAR
+    description: TEXT
+    start_date: DATE
+    end_date: DATE
+}
+
+entity "Group" {
+    +group_id: INT
+    ---
+    group_name: VARCHAR
+}
+
+entity "Member" {
+    +member_id: INT
+    ---
+    user_id: INT
+    group_id: INT
+}
+
+entity "Task" {
+    +task_id: INT
+    ---
+    task_name: VARCHAR
+    project_id: INT
+    assigned_to: INT
+    status: VARCHAR
+    due_date: DATE
+}
+
+' Relationships
+User ||--o{ Member : "has"
+Group ||--o{ Member : "includes"
+Project ||--o{ Task : "contains"
+User ||--o{ Task : "assigned to"
+
+@enduml
