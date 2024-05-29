@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A58C440-2078-B5CD-D31C-CF81299A38C2" name="Cliente">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E5C58C1F-179E-E8C1-8773-BE08A0776BA9</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="DE75E76E-6674-4E2E-5EA1-0BE211B5F9E5">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F508E98C-520B-DC37-6BF1-3CE96E964A3F</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="A13100B7-0A61-2DC1-94B5-AB25B2D1C83D">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>94D6FF9F-2BBF-ECD7-5E0A-ACA74DFB94FA</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dataNascimento" id="FA966570-86C3-3A6C-44FC-17DE1F7A0A7E">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>9DA519FF-8F95-462D-D8DB-AA4C479CA175</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="B0F29F67-15A3-D3BE-1853-63C289CA4AD1">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>7EB78760-16E6-24C1-68FF-6065DEC2C1F8</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endereco" id="59BE8296-DE46-E642-3E1F-6B5C70A4C4B9">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>630B9689-03F5-BE28-4EA2-AE9BF6A76309</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>57F8CA54-B8D6-EE32-0CF8-2C41513D523C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="05A41C70-D411-B1E9-15FA-245443C02861" name="Cliente PK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>B632D144-463C-731E-12DD-A27D3B6E7E37</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE75E76E-6674-4E2E-5EA1-0BE211B5F9E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

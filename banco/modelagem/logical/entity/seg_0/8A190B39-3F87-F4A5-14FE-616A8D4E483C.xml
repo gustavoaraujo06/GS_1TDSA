@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8A190B39-3F87-F4A5-14FE-616A8D4E483C" name="Endereco">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>E471D015-4204-ABE4-0D82-60EC3AD01E2B</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="4051B92E-C12A-E44E-7962-F3FCAAF28111">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<generatorID>BA267E9D-FD64-8CE8-27C5-8AFDDBA3360A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>F54DC3E2-2E84-184D-6030-EA392A29A0F2</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<referedAttribute>DE75E76E-6674-4E2E-5EA1-0BE211B5F9E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logradouro" id="522789A0-EC97-9C93-9627-B4C9A9EA1442">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>A15A7C0E-425F-8DA9-B07F-2CD23C272623</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="E706230D-E8EC-88FC-8FA4-2B5D29CDAF67">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>3EBE4558-58E8-420B-10A9-2CACC0569E0D</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cep" id="BBCF2884-0D61-66F8-BE4C-2FB125777B4E">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>417C5776-5EBB-D333-22E8-F488EE0628BA</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="complemento" id="A93E7D9D-5926-1006-2619-03C8A481C4B5">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:14 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<importedID>95514DCD-86A1-8BF1-C7BF-84BDE1C90557</importedID>
+<engineerTo>
+<item key="9385BD63-EB72-5089-CAC4-771B06923985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
