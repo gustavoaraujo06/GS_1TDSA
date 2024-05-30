@@ -6,6 +6,20 @@ public class Endereco {
 	private String cep;
 	private String complemento;
 	
+	public Endereco() {
+		super();
+	}
+	
+	
+	public Endereco(String logradouro, int numero, String cep, String complemento) {
+		super();
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.cep = cep;
+		this.complemento = complemento;
+	}
+
+
 	public String getLogradouro() {
 		return logradouro;
 	}

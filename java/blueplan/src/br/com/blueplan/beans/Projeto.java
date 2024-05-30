@@ -5,18 +5,18 @@ import java.util.ArrayList;
 public class Projeto {
 	private String titulo;
 	private String descricao;
-	private Cliente criador;
+	private Usuario criador;
 	private String duracao;
 	private float verba;
 	private Endereco localizacao;
-	private ArrayList<Cliente> participantes;
+	private ArrayList<Usuario> participantes;
 	
 	public Projeto() {
 		super();
 	}
 
-	public Projeto(String titulo, String descricao, Cliente criador, String duracao, float verba,
-			Endereco localizacao, ArrayList<Cliente> participantes) {
+	public Projeto(String titulo, String descricao, Usuario criador, String duracao, float verba,
+			Endereco localizacao, ArrayList<Usuario> participantes) {
 		super();
 		this.titulo = titulo;
 		this.descricao = descricao;
@@ -43,11 +43,11 @@ public class Projeto {
 		this.descricao = descricao;
 	}
 
-	public Cliente getCriador() {
+	public Usuario getCriador() {
 		return criador;
 	}
 
-	public void setCriador(Cliente criador) {
+	public void setCriador(Usuario criador) {
 		this.criador = criador;
 	}
 
@@ -74,14 +74,20 @@ public class Projeto {
 	public void setLocalizacao(Endereco localizacao) {
 		this.localizacao = localizacao;
 	}
-	public void addParticipante(Cliente novoParticipante) {
+	public void addParticipante(Usuario novoParticipante) {
 		this.participantes.add(novoParticipante);
 	}
-	public void removeParticipante(Cliente novoParticipante) {
+	public void removeParticipante(Usuario novoParticipante) {
 		int index = this.participantes.indexOf(novoParticipante);
 		this.participantes.remove(index);
 	}
-	public Cliente getParticipante(int clienteId) {
-
+	public Usuario getParticipante(int clienteId) {
+		for(int i  = 0; i < this.participantes.size(); i++) {
+			if (participantes.get(i).getId() == clienteId) {
+				return participantes.get(i);
+			}
+		}
+		throw new RuntimeException("Cliente com id " + clienteId + " nao encontrado");
 	}
+	
 }
