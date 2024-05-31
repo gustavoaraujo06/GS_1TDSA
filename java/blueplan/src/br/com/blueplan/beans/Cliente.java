@@ -1,14 +1,44 @@
 package br.com.blueplan.beans;
 
 public class Cliente extends Usuario {
+	private String cpf;
+	private String rg;
+	
+	
 	public Cliente() {
 		super();
 	}
 
-	public Cliente(int id, String nome, String cpf, String rg, Endereco endereco, String dataNascimento, String email,
-			int role) {
-		super(id, nome, cpf, rg, endereco, dataNascimento, email, role);
+
+	public Cliente(String nome, String email, String cpf, String rg) {
+		super(nome, email);
+		this.cpf = cpf;
+		this.rg = rg;
 	}
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+
+	public String getRg() {
+		return rg;
+	}
+
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	
+	
+	
+	
 	
 	
 }

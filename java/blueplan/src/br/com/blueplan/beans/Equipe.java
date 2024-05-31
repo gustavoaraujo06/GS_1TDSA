@@ -84,6 +84,14 @@ public class Equipe {
 	public void setTarefas(ArrayList<Tarefa> tarefas) {
 		this.tarefas = tarefas;
 	}
+	
+	public void addTarefa(Tarefa tarefa) {
+		tarefas.add(tarefa);
+	}
+	
+	public void removeTarefa(Tarefa tarefa) {
+		tarefas.remove(tarefa);
+	}
 
 	public void addMember(Cliente cliente) {
 		membros.add(cliente);
