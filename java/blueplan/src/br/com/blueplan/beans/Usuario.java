@@ -3,11 +3,8 @@ package br.com.blueplan.beans;
 public abstract class Usuario {
 	private int id;
 	private String nome;
-	private String cpf;
-	private String rg;
-	private Endereco endereco;
-	private String dataNascimento;
 	private String email;
+	private static int contadorUsuario = 0;
 	
 	public Usuario() {
 		super();
@@ -15,15 +12,13 @@ public abstract class Usuario {
 	
 	
 	
-	public Usuario(int id, String nome, String cpf, String rg, Endereco endereco, String dataNascimento, String email,
-			int role) {
+	public Usuario(String nome, String email) {
 		super();
-		this.id = id;
+		this.id = contadorUsuario;
+		
+		contadorUsuario++;
+		
 		this.nome = nome;
-		this.cpf = cpf;
-		this.rg = rg;
-		this.endereco = endereco;
-		this.dataNascimento = dataNascimento;
 		this.email = email;
 	}
 
@@ -41,35 +36,28 @@ public abstract class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-	public String getRg() {
-		return rg;
-	}
-	public void setRg(String rg) {
-		this.rg = rg;
-	}
-	public Endereco getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-	public String getDataNascimento() {
-		return dataNascimento;
-	}
-	public void setDataNascimento(String dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		if(obj.getClass() != this.getClass()) {
+			return false;
+		}
+		
+		Usuario other = (Usuario) obj;
+		
+		if(other.getId() == this.getId()) {
+			return true;
+		}
+		
+		return false;
 	}
 	
 	
