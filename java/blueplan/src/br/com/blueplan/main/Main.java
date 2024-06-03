@@ -7,6 +7,7 @@ import br.com.blueplan.beans.Cliente;
 import br.com.blueplan.beans.Endereco;
 import br.com.blueplan.beans.Equipe;
 import br.com.blueplan.beans.Projeto;
+import br.com.blueplan.beans.Tarefa;
 
 public class Main {
 
@@ -37,8 +38,20 @@ public class Main {
 						JOptionPane.showInputDialog("Qual o complemento do Projeto?")
 						));
 		Equipe equipe1 = Equipe.criarEquipe();
+		equipe1.addMember(cliente1);
+		equipe1.addMember(cliente2);
+		
 		
 		novoProjeto.adicionarEquipe(equipe1);
+		
+		Tarefa tarefa1 = Tarefa.criarTarefa();
+		Tarefa tarefa2 = Tarefa.criarTarefa();
+		
+		novoProjeto.adicionarTarefa(equipe1, tarefa1);
+		novoProjeto.adicionarTarefa(equipe1, tarefa2);
+		
+		System.out.println(novoProjeto);
+		
 		
 		
 	}

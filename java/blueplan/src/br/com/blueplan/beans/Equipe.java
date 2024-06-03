@@ -10,8 +10,8 @@ public class Equipe {
 	private String nome;
 	private String descricao;
 	private LocalDate dataCriacao;
-	private ArrayList<Cliente> membros;
-	private ArrayList<Tarefa> tarefas;
+	private ArrayList<Cliente> membros = new ArrayList<Cliente>();
+	private ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
 	
 	//so pra deixar bonitinho
 	private static int idCounter = 0;
@@ -123,11 +123,16 @@ public class Equipe {
 		for(int i = 0; i < membros.size(); i++) {
 			membrosString += membros.get(i) + "\n";
 		}
+		String tarefaString = "";
+		for(int i = 0; i < tarefas.size(); i++) {
+			tarefaString += tarefas.get(i) + "\n";
+		}
 		return 
-				"Equipe " + this.getNome() +
+				"\nEquipe " + this.getNome() +
 				"\nID: " + this.getId() +
-				"\nDescrição " + this.getDescricao() +
+				"\nDescrição: " + this.getDescricao() +
 				"\nData de Criação: " + this.getDataCriacao() +
-				"\nMembros: " + membrosString;
+				"\nMembros: \n" + membrosString +
+				"\nTarefas: \n" + tarefaString;
 	}
 }
