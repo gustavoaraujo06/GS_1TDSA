@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5C58C1F-179E-E8C1-8773-BE08A0776BA9" name="Cliente">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>988A2EAA-5B0C-B856-85A4-8693636CA83E</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F508E98C-520B-DC37-6BF1-3CE96E964A3F">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>1CD409AE-7A62-AB9F-CD67-1F1BD1A43726</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="94D6FF9F-2BBF-ECD7-5E0A-ACA74DFB94FA">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>09E489E5-5B53-780A-BC3E-715FF24DF9B6</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dataNascimento" id="9DA519FF-8F95-462D-D8DB-AA4C479CA175">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>458B0E5A-9A9D-376D-7156-8C0F4372DCF3</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role" id="7EB78760-16E6-24C1-68FF-6065DEC2C1F8">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>5DD48677-6222-DFCD-3AC4-EDA08B7AE7F9</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endereco" id="630B9689-03F5-BE28-4EA2-AE9BF6A76309">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<importedID>698AAE0E-9ECE-9CA5-C175-DC008BC7CA38</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="true"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>57F8CA54-B8D6-EE32-0CF8-2C41513D523C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B632D144-463C-731E-12DD-A27D3B6E7E37" name="Cliente PK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 17:12:58 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<importedID>0BE3C59E-8C1F-E21A-AA31-90F644DC1400</importedID>
+<engineerTo>
+<item key="DD47AFF3-328D-FD55-4A2D-0C4AE66FB86F" value="true"/>
+<item key="D81F3F27-798B-812B-14A5-F7D71747DE6E" value="false"/>
+<item key="E56F02DD-21E0-CB64-2E3E-7542EE523E8D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F508E98C-520B-DC37-6BF1-3CE96E964A3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

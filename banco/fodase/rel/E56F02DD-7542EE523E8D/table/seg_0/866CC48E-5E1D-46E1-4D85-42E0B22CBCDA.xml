@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="866CC48E-5E1D-46E1-4D85-42E0B22CBCDA" name="Relation_3">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Projeto_id" id="748E2C60-53BF-73E4-CD38-021CF470ABEB">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15A7D0DD-16EE-40BC-E7E1-5E8548B159C1" referredColumn="F1F0D6CE-3A3E-CE57-31B7-5A56582F76DF"/>
+</associations>
+</Column>
+<Column name="Endereco_Endereco_ID" id="CE9FE02C-2C7B-A51E-02FB-CE5A3E6CF9EC">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B03B9F92-7BB9-B49F-3BC7-C711093673C1" referredColumn="E465FD2E-8873-539F-A93A-6C46C2D527D4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9FBCB74-332E-E573-0EF9-34B99F662E5E" name="Relation_3_PK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<ownerDesignName>fodase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="748E2C60-53BF-73E4-CD38-021CF470ABEB"/>
+<colUsage columnID="CE9FE02C-2C7B-A51E-02FB-CE5A3E6CF9EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA5EF5E6-F726-CA7B-7B5F-05D143E831BD" name="Relation_3_Projeto_FK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<generatorID>A2F50602-FAEE-E536-4DC4-C430BAE20D92</generatorID>
+<ownerDesignName>fodase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="748E2C60-53BF-73E4-CD38-021CF470ABEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6C6358F-9D83-6A98-B443-FE81F0F4140C" name="Relation_3_Endereco_FK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:18:01 UTC</createdTime>
+<generatorID>A2F50602-FAEE-E536-4DC4-C430BAE20D92</generatorID>
+<ownerDesignName>fodase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE9FE02C-2C7B-A51E-02FB-CE5A3E6CF9EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
