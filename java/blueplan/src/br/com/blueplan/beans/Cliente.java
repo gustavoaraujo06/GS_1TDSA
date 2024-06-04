@@ -36,6 +36,13 @@ public class Cliente extends Usuario {
 		this.rg = rg;
 	}
 	
+	@Override
+	public String toString() {
+		return "\nNome: " + this.getNome() +
+				"\nEmail: " + this.getEmail() +
+				"\nRG: " + this.rg +
+				"\nCPF: " + this.cpf;
+	}
 	
 	
 	
