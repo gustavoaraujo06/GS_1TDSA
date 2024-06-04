@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE598FC0-4526-70B6-E9C4-75561DB97AE2" name="Projeto">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:28 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="1A78FE81-15DF-A1DB-4268-149BF53C1780">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:34 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="BBB3EEB3-101E-0ADC-3B9E-F415D5B19005">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:38 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="B80D9B56-2DCE-F26B-9A6A-6729E68038BB">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:42 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="B669738E-87D0-EDD6-2BF8-4CDFC912BAD8">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:49 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacao" id="0235303E-01A1-1C59-080D-E0B010FC0775">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:51:04 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="01A7472F-8788-AABF-E5D5-7A140F21AD74">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:54:22 UTC</createdTime>
+<generatorID>758D0EA9-4AE2-842A-BA59-4C0DB79964CC</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<referedAttribute>875CC7B5-D1A1-C613-6E9F-51CA8C5EE2C2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C2291A7-71C0-B8AF-2C8E-F588574506AB" name="Projeto PK">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:50:36 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A78FE81-15DF-A1DB-4268-149BF53C1780</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

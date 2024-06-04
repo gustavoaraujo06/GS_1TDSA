@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E3082ED-7146-F423-1697-B2C57A1F3C9B" name="Cliente">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>6A58C440-2078-B5CD-D31C-CF81299A38C2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1DB9C95A-1AD9-DE3B-C53A-206B9BC055C1">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>DE75E76E-6674-4E2E-5EA1-0BE211B5F9E5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="04D2F2BE-044C-80B6-23F0-A6CD8B1F0BE6">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>A13100B7-0A61-2DC1-94B5-AB25B2D1C83D</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataNascimento" id="BB62392A-EC98-E343-9EE3-21507AF23AC9">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>FA966570-86C3-3A6C-44FC-17DE1F7A0A7E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="5C5B8D1A-E581-3CEB-72E6-99E2196387BB">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>B0F29F67-15A3-D3BE-1853-63C289CA4AD1</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="endereco" id="7FC0E136-2502-7816-D2D6-1E1DD5356370">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>59BE8296-DE46-E642-3E1F-6B5C70A4C4B9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>57F8CA54-B8D6-EE32-0CF8-2C41513D523C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco_Endereco_ID" id="A7354675-782E-9415-8CC5-E1E673495AF7">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:23:20 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Projeto_id" id="01F289E7-C2DA-A52D-C854-1ED8E8219E27">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:26:42 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46B86126-5B60-84CF-AD6C-3A517A859D26" referredColumn="998E97BC-AC9E-E665-C9A6-99290015B24A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D663FE9B-1B67-4853-CC22-E8F387A68DAB" name="Cliente_PK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:21:23 UTC</createdTime>
+<generatorID>05A41C70-D411-B1E9-15FA-245443C02861</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DB9C95A-1AD9-DE3B-C53A-206B9BC055C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C69E5EA-352F-A5F9-6F37-129E6D615E4A" name="Cliente_Projeto_FK">
+<createdBy>samuel</createdBy>
+<createdTime>2024-05-28 20:26:42 UTC</createdTime>
+<generatorID>28EB56AA-2974-FDFF-619B-F1D04A9302DD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01F289E7-C2DA-A52D-C854-1ED8E8219E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

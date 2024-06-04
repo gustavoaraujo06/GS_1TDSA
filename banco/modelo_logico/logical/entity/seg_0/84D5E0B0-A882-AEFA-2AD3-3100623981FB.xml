@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84D5E0B0-A882-AEFA-2AD3-3100623981FB" name="Tarefa">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:04 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="06C41252-CF80-900B-2954-B8C8C5D96AE1">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:09 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="5F7CF1C6-52DC-18BA-7ED6-4364ED9B83C6">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:15 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="6CE10C17-62CC-A553-30D1-73F621A32AB7">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:23 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inicio" id="65632E47-D1E1-6BDD-915A-764BFE1F2BAF">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:42 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_fim" id="76F917A6-1A31-409A-5843-7267A76102EE">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:46 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="47CA06B6-FBDD-0697-936D-2A573D028F0A">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:50 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="223724D1-3DA0-DE70-2F82-E04CF9C8D2E8">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 01:08:48 UTC</createdTime>
+<generatorID>4341593D-B999-BA47-FDCE-B64F1F48A7BF</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<referedAttribute>1A78FE81-15DF-A1DB-4268-149BF53C1780</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="1C1E81A4-1259-6121-07A4-2D2B99BAF61E">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 01:09:05 UTC</createdTime>
+<generatorID>AAC71573-9537-26B7-0312-A6EAF8C2A7CE</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<referedAttribute>31F10225-99D5-7D14-BB64-D5EEB78DE486</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CEB02FF6-3B54-DF58-3173-EACD62033C43" name="Tarefa PK">
+<createdBy>gustavoaraujo</createdBy>
+<createdTime>2024-05-30 00:52:12 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="5FF8F8FF-7BF2-47FD-E819-2BD832395D6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>06C41252-CF80-900B-2954-B8C8C5D96AE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

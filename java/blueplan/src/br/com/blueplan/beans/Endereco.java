@@ -6,6 +6,20 @@ public class Endereco {
 	private String cep;
 	private String complemento;
 	
+	public Endereco() {
+		super();
+	}
+	
+	
+	public Endereco(String logradouro, int numero, String cep, String complemento) {
+		super();
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.cep = cep;
+		this.complemento = complemento;
+	}
+
+
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -30,6 +44,13 @@ public class Endereco {
 	public void setComplemento(String complemento) {
 		this.complemento = complemento;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "\nRua: " + this.logradouro +
+				"\nNumero: " + this.numero +
+				"\nCEP: " + this.cep +
+				"\nComplemento: " + this.complemento;
+	}
 	
 }
