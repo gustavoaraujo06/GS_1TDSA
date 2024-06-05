@@ -6,7 +6,7 @@ main {
     display: flex;
     align-items: center;
     height: 100%;
-    background: url('/assets/img/oceano.jpg') no-repeat scroll -1px -700px;
+    background: url('/assets/img/oceano.jpg') no-repeat -1px -600px;
     background-size: cover;
 }
 
@@ -95,4 +95,10 @@ form a {
 form a:hover{
     text-decoration: underline;
     transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    main {
+        background: url('/assets/img/oceano.jpg') no-repeat scroll -1px -200px;
+    }
 }
