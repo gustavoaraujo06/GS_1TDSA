@@ -1,11 +1,57 @@
+:root {
+    --primary-color: #436CD6;
+    --secondary-color: #DDDDDD;
+    --font: sans-serif;
+}
+
+* {
+    font-family: 'JetBrains Mono';
+}
+
 body {
     margin: 0;
     width: 100%;
     height: 100vh;
+    background: var(--secondary-color);
+    font-family: var(--font);
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 80px;
+}
+
+.headerItems {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerItems a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+#btn-openNav span img {
+    width: 25px;
 }
 
 #sideBar {
-    background-color: #CDE8E5;
+    background-color: var(--primary-color);
     text-align: center;
     height: 100vh;
     position: fixed;
@@ -21,7 +67,7 @@ body {
     display: block;
     transition: 0.3s;
     text-decoration: none;
-    color: #111;
+    color: #ffffff;
     display: none;
 }
 
@@ -31,5 +77,86 @@ body {
     right: 15px;
     font-size: 30px;
     text-decoration: none;
-    color: #111;
+    color: #ffffff;
+}
+
+.projects {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.title-img {
+    display: flex;
+    align-items: center;    
+}
+
+.project-title {
+    margin-left: 20px;
+}
+
+.project-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.actions {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.button {
+    width: 100%;
+    align-items: center;
+    text-align: end;
+}
+
+.subscribe-btn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.people-img {
+    display: flex;
+}
+
+.people-img div {
+    width: 25px;
+    height: 25px;
+    background-color: #DDDDDD;
+    border-radius: 13px;
+    margin-left: -5px;
+    box-shadow: -2px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.more-people {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.more-people h2 {
+    font-size: 18px;
+}
+
+.projects:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .subscribe-btn {
+        width: 150px;
+    }
 }
