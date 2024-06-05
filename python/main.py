@@ -20,7 +20,8 @@ class Projeto:
         self.equipes = []
         self.tarefas = []
     def __str__(self) -> str:
-        return (f"\nProjeto: {self.nome}" 
+        return (f"\n{self.id + 1}."
+            f"\nProjeto: {self.nome}" 
             f"\nDescrição: {self.descricao}" 
             f"\nCriador: {self.criador.nome}" 
             f"\nLocalização: {self.localizacao.logradouro}, {self.localizacao.numero}, {self.localizacao.cep}, {self.localizacao.complemento}")
@@ -44,6 +45,18 @@ class Equipe:
         self.descricao = descricao
         self.membros = []
         self.tarefas = []
+
+    def __str__(self) -> str:
+        retorno = f"\n{self.id +1 }.\nEquipe: {self.nome}" + f"\nDescrição: {self.descricao} + \nMembros:"
+
+        for membro in self.membros:
+            retorno += f"\n{membro.nome}"
+
+        retorno += "\nTarefas:"
+
+        for tarefa in self.tarefas:
+            retorno += f"\n{tarefa.nome}: {tarefa.descricao} - {tarefa.data_inicio} até {tarefa.data_fim}"
+        return retorno
 class Admin:
     contador_id = 0
     def __init__(self, nome, email, senha):
@@ -59,7 +72,7 @@ class Endereco:
         self.numero = numero
         self.cep = cep
         self.complemento = complemento
-usuarios = [Admin("admin", "admin@example.com", "admin123")]
+usuarios = [Admin("admin", "admin@admin.com", "admin123")]
 projetos = []
 
 # Função de Login/Criar Conta
@@ -72,10 +85,10 @@ def login_criar_conta():
         senha = input("Senha: ")
         for usuario in usuarios:
             if usuario.email == email and usuario.senha == senha:
-                print(f"Bem-vindo, {usuario.nome}!")
+                print(f"\nBem-vindo, {usuario.nome}!")
                 return usuario
-        print("Credenciais inválidas!")
-        return None
+        print("\nCredenciais inválidas!")
+
     elif opcao == "2":
         nome = input("Nome: ")
         email = input("Email: ")
@@ -87,18 +100,17 @@ def login_criar_conta():
         return novo_usuario
     else:
         print("Opção inválida!")
-        return None
 
 # Função para criar projeto
 def criar_projeto(usuario):
     if isinstance(usuario, Admin):
         nome = input("Nome do projeto: ")
         descricao = input("Descrição do projeto: ")
-        rua = input("Rua: ")
+        logradouro = input("Logradouro: ")
         cidade = input("Numero: ")
         cep = input("CEP: ")
         complemento = input("Complemento: ")
-        localizacao = Endereco(rua, cidade, cep, complemento)
+        localizacao = Endereco(logradouro, cidade, cep, complemento)
         novo_projeto = Projeto(nome, descricao, usuario, localizacao)
         print("Projeto criado com sucesso!")
         projetos.append(novo_projeto)
@@ -106,7 +118,7 @@ def criar_projeto(usuario):
         print("Apenas administradores podem criar projetos.")
 
 def criar_equipe(projeto, usuario):
-    if isinstance(usuario, Admin) and projeto.criador == usuario:
+    if projeto.criador == usuario:
         nome = input("Nome da equipe: ")
         descricao = input("Descrição da equipe: ")
         nova_equipe = Equipe(nome, descricao)
@@ -116,10 +128,7 @@ def criar_equipe(projeto, usuario):
         print("Apenas administradores e criadores de projeto podem criar equipes.")
 
 def adicionar_tarefa(projeto, index_equipe, usuario):
-    if isinstance(usuario, Admin) and projeto.criador == usuario:
-        if(index_equipe >= len(projeto.equipes)):
-            print("Equipe não encontrada!")
-            return
+    if projeto.criador == usuario:
         equipe = projeto.equipes[index_equipe]
         nome = input("Nome da tarefa: ")
         descricao = input("Descrição da tarefa: ")
@@ -131,8 +140,18 @@ def adicionar_tarefa(projeto, index_equipe, usuario):
     else:
         print("Apenas administradores e criadores de projeto podem adicionar tarefas.")
 
-        
+def entrar_equipe(projeto, index_equipe, usuario):
+    if(index_equipe >= len(projeto.equipes)):
+        print("Equipe não encontrada!")
+        return
+    equipe = projeto.equipes[index_equipe]
+    equipe.membros.append(usuario)
+    print("Entrou na equipe com sucesso!")
 
+def status_projeto(projeto):
+    print(projeto)
+    for equipe in projeto.equipes:
+        print(equipe)
 
 
 # Menu principal
@@ -159,11 +178,47 @@ def menu_principal():
             if len(projetos) == 0:
                 print("Nenhum projeto disponível!")
                 continue
+
             for projeto in projetos:
-                print(f"{projeto.id + 1}. {projeto.nome}")
+                print(projeto)
+
             index_projeto = int(input("Escolha um projeto: ")) - 1
+
+            if(index_projeto >= len(projetos) or index_projeto < 0):
+                print("Projeto não encontrado!")
+                continue
+
             criar_equipe(projetos[index_projeto], usuario_logado)
         elif opcao == "4" and usuario_logado and isinstance(usuario_logado, Admin):
+
+            if len(projetos) == 0:
+                print("Nenhum projeto disponível!")
+                continue
+
+            for projeto in projetos:
+                print(projeto)
+
+            index_projeto = int(input("Escolha um projeto: ")) - 1
+
+            if(index_projeto >= len(projetos) or index_projeto < 0):
+                print("Projeto não encontrado!")
+                continue
+
+            if(len(projetos[index_projeto].equipes) == 0):
+                print("Nenhuma equipe disponível!")
+                continue
+
+            for equipe in projetos[index_projeto].equipes:
+                print(equipe)
+                
+            index_equipe = int(input("Escolha uma equipe: ")) - 1
+
+            if(index_equipe >= len(projeto.equipes) or index_equipe < 0):
+                print("Equipe não encontrada!")
+                continue
+            
+            adicionar_tarefa(projetos[index_projeto], index_equipe, usuario_logado)
+        elif opcao == "5" and usuario_logado:
             if len(projetos) == 0:
                 print("Nenhum projeto disponível!")
                 continue
@@ -182,7 +237,25 @@ def menu_principal():
                 print(equipe)
                 
             index_equipe = int(input("Escolha uma equipe: ")) - 1
-            adicionar_tarefa(projetos[index_projeto], index_equipe, usuario_logado)
+
+            if(index_equipe >= len(projeto.equipes) or index_equipe < 0):
+                print("Equipe não encontrada!")
+                continue
+
+            entrar_equipe(projetos[index_projeto], index_equipe, usuario_logado)
+        elif opcao == "6" and usuario_logado:
+            if len(projetos) == 0:
+                print("Nenhum projeto disponível!")
+                continue
+            for projeto in projetos:
+                print(projeto)
+            index_projeto = int(input("Escolha um projeto: ")) - 1
+
+            if(index_projeto >= len(projetos) or index_projeto < 0):
+                print("Projeto não encontrado!")
+                continue
+
+            status_projeto(projetos[index_projeto])
         elif opcao == "7":
             break
         else:
