@@ -155,6 +155,16 @@ header {
     cursor: pointer;
 }
 
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 14px;
+    height: 100%;
+}
+
 @media (min-width: 768px) {
     .subscribe-btn {
         width: 150px;

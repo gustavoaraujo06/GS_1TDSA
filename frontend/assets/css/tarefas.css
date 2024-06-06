@@ -1,0 +1,22 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    text-align: center;
+}
+
+.task-status h2 {
+    font-size: 1.2rem;
+}
+
+.inprogress {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(255,255,0,1) 100%);
+}
+
+.available {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, rgba(0,255,0,1) 100%);
+}
+
+.soon {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 80%, var(--primary-color) 100%);
+}
