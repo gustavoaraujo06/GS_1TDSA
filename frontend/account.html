@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <script src="assets/js/script.js" defer></script>
+    <title>Projetos</title>
+</head>
+<body>
+    <header>
+        <aside>
+            <nav id="sideBar">
+                <div id="navItems">
+                    <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html" class="navItem">Projetos</a>
+                    <a href="account.html" class="navItem">Perfil</a>
+                </div>
+            </nav>
+        </aside>
+        <div class="headerItems">
+            <div id="btn-openNav">
+                <span style="font-size:30px;cursor:pointer;" onclick="openNav()"><img src="assets/img/menu-aberto.png" alt="Menu"></span>
+            </div>
+            <div class="account">
+                <a href="register.html">Minha Conta</a>
+                <img src="assets/img/user_branco.png" alt="Ícone de Usuário">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="user-info">
+                <div class="username info">
+                    <img src="assets/img/user_azul.png" alt="Ícone do usuário">
+                    <span><b>Username: </b>John Doe</span>
+                </div>
+                <div class="email info">
+                    <img src="assets/img/email_azul.png" alt="Ícone de email">
+                    <span><b>E-mail: </b>johndoe@mail.com</span>
+                </div>
+                <div class="rg info">
+                    <img src="assets/img/rg_azul.png" alt="Ícone de RG">
+                    <span><b>RG: </b>12.345.678-9</span>
+                </div>
+                <div class="cpf info">
+                    <img src="assets/img/cpf_azul.png" alt="Ícone do CPF">
+                    <span><b>CPF: </b>123.456.789-00</span>
+                </div>
+            </div>
+            <div class="subscribed-projects">
+                <div class="subs-title">
+                    <h1>Projetos Inscritos</h1>
+                </div>
+                <div class="subs-projects">
+                    <div onclick="window.location.href='projeto1/equipe1/tarefas/tarefas.html'">
+                        <h2>Projeto 1</h2>
+                    </div>
+                    <div onclick="window.location.href='projeto2/equipe1/tarefas/tarefas.html'">
+                        <h2>Projeto 2</h2>
+                    </div>
+                    <div onclick="window.location.href='projeto3/equipe2/tarefas/tarefas.html'">
+                        <h2>Projeto 3</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

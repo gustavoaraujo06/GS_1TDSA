@@ -1,0 +1,53 @@
+.container {
+    background-color: #ffffff;
+    width: 80%;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.info img {
+    width: 25px;
+}
+
+.info span b {
+    color: var(--primary-color);
+}
+
+.subscribed-projects {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.subs-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.subs-title {
+    margin-bottom: 15px;
+}
+
+.subs-projects div {
+    width: 70%;
+    padding: 25px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    cursor: pointer;
+}
