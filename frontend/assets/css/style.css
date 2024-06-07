@@ -71,6 +71,12 @@ header {
     display: none;
 }
 
+.navItem:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border-radius: 25px;
+}
+
 .closeBtn {
     position: absolute;
     top: 0;

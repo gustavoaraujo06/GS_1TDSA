@@ -1,3 +1,9 @@
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .container {
     background-color: #ffffff;
     width: 80%;
@@ -50,4 +56,12 @@
     border: 1px solid #000000;
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.subs-projects div:hover {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    transform: scale(1.025);
+    transition: 0.2s;
 }
