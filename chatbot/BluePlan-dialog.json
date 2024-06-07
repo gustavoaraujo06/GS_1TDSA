@@ -1,0 +1,795 @@
+{
+  "intents": [
+    {
+      "intent": "acompanhar_situacao",
+      "examples": [
+        {
+          "text": "Acompanhar projeto de proteção oceânica"
+        },
+        {
+          "text": "Acompanhar situação do projeto"
+        },
+        {
+          "text": "Como está meu projeto de preservação?"
+        },
+        {
+          "text": "Como está o andamento do projeto?"
+        },
+        {
+          "text": "Como estão as tarefas do projeto?"
+        },
+        {
+          "text": "Qual é o status do meu projeto?"
+        },
+        {
+          "text": "Quero acompanhar meu projeto"
+        },
+        {
+          "text": "Quero ver o progresso do projeto"
+        },
+        {
+          "text": "Situação atual do projeto"
+        },
+        {
+          "text": "Status das tarefas do projeto"
+        },
+        {
+          "text": "Ver progresso das equipes"
+        },
+        {
+          "text": "Ver progresso das tarefas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "adicionar_tarefa",
+      "examples": [
+        {
+          "text": "Adicionar novas tarefas"
+        },
+        {
+          "text": "Adicionar tarefas ao meu projeto"
+        },
+        {
+          "text": "Adicionar tarefas de proteção ambiental"
+        },
+        {
+          "text": "Como adiciono tarefas ao projeto?"
+        },
+        {
+          "text": "Como criar tarefas no projeto?"
+        },
+        {
+          "text": "Como incluir tarefas no projeto?"
+        },
+        {
+          "text": "Como inserir tarefas no projeto?"
+        },
+        {
+          "text": "Criar tarefas de preservação"
+        },
+        {
+          "text": "Incluir novas tarefas"
+        },
+        {
+          "text": "Inserir tarefas no projeto marinho"
+        },
+        {
+          "text": "Quero adicionar tarefas ao projeto"
+        },
+        {
+          "text": "Quero criar tarefas para o projeto"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "configurar_modo",
+      "examples": [
+        {
+          "text": "Alterar o modo de resposta para áudio."
+        },
+        {
+          "text": "Alterar para respostas somente em texto."
+        },
+        {
+          "text": "Como configurar o modo de resposta para texto?"
+        },
+        {
+          "text": "Como posso receber apenas respostas em texto?"
+        },
+        {
+          "text": "Configurar o chatbot para respostas em áudio."
+        },
+        {
+          "text": "Configurar para receber apenas texto."
+        },
+        {
+          "text": "Configurar respostas em áudio apenas"
+        },
+        {
+          "text": "Mudar o modo para só texto"
+        },
+        {
+          "text": "Mudar para respostas de texto somente."
+        },
+        {
+          "text": "Quero que todas as respostas sejam por áudio."
+        },
+        {
+          "text": "Quero receber respostas somente em áudio"
+        },
+        {
+          "text": "Quero trocar para respostas de áudio."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "criacao_projetos",
+      "examples": [
+        {
+          "text": "Como começo um novo projeto?"
+        },
+        {
+          "text": "Como começo um projeto marinho?"
+        },
+        {
+          "text": "Como criar um novo projeto?"
+        },
+        {
+          "text": "Como posso criar um projeto?"
+        },
+        {
+          "text": "Criar novo projeto de conservação"
+        },
+        {
+          "text": "Criar projeto de preservação"
+        },
+        {
+          "text": "Criar projeto para salvar o oceano"
+        },
+        {
+          "text": "Iniciar nova iniciativa de preservação"
+        },
+        {
+          "text": "Iniciar projeto de proteção oceânica"
+        },
+        {
+          "text": "Quero criar um projeto ambiental"
+        },
+        {
+          "text": "Quero criar um projeto para limpar praias"
+        },
+        {
+          "text": "Quero iniciar um projeto"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "inscricao_projeto",
+      "examples": [
+        {
+          "text": "Como faço para participar de um projeto?"
+        },
+        {
+          "text": "Como me inscrevo em um projeto?"
+        },
+        {
+          "text": "Como participar de projetos?"
+        },
+        {
+          "text": "Inscrever em projeto de preservação"
+        },
+        {
+          "text": "Inscrever para ajudar o oceano"
+        },
+        {
+          "text": "Inscrição para projeto"
+        },
+        {
+          "text": "Me inscrever em um projeto marinho"
+        },
+        {
+          "text": "Participar de iniciativas de preservação"
+        },
+        {
+          "text": "Quero ajudar em um projeto"
+        },
+        {
+          "text": "Quero me inscrever em um projeto"
+        },
+        {
+          "text": "Quero me juntar a um projeto"
+        },
+        {
+          "text": "Quero participar de um projeto de limpeza"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "participar_equipe",
+      "examples": [
+        {
+          "text": "Como entro em uma equipe?"
+        },
+        {
+          "text": "Como faço para entrar em uma equipe?"
+        },
+        {
+          "text": "Como participar de uma equipe do projeto?"
+        },
+        {
+          "text": "Como posso participar de uma equipe?"
+        },
+        {
+          "text": "Entrar em uma equipe de conservação"
+        },
+        {
+          "text": "Juntar-se a uma equipe de preservação"
+        },
+        {
+          "text": "Me inscrever em uma equipe"
+        },
+        {
+          "text": "Participar de equipe ambiental"
+        },
+        {
+          "text": "Participar de equipe no projeto"
+        },
+        {
+          "text": "Quero entrar em uma equipe marinha"
+        },
+        {
+          "text": "Quero me juntar a uma equipe"
+        },
+        {
+          "text": "Quero participar de uma equipe"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "configuracao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "padrao",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "texto",
+          "synonyms": [
+            "palavras"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "voz",
+          "synonyms": [
+            "fala",
+            "som"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "data",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "19/07/2024",
+          "patterns": [
+            "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "equipe",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Coral Vivo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Guardiões do Mar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mar Azul",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Protetores dos Corais",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "projeto",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Conservação dos Corais",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Limpeza Oceanica",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tarefa",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Coleta de Resíduos Plásticos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cultivo de Corais",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Distribuição de Materiais Informativos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Implementação de Barreiras de Proteção",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Monitoramento de Corais",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Monitoramento de Poluentes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Palestras Educativas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Transplante de Corais",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_5_1717695117943",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, vamos adicionar a tarefa com data final $data"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1717786927265",
+      "context": {
+        "data": "@data"
+      },
+      "conditions": "@data",
+      "dialog_node": "node_3_1717786990366"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O projeto $projeto se encontra 76% concluido!"
+              },
+              {
+                "text": "O projeto $projeto se encontra 32% concluido!"
+              },
+              {
+                "text": "O projeto $projeto se encontra 84% concluido!"
+              },
+              {
+                "text": "O projeto $projeto se encontra 65% concluido!"
+              },
+              {
+                "text": "O projeto $projeto se encontra 45% concluido!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_8_1717787581992",
+      "context": {
+        "projeto": "@projeto"
+      },
+      "conditions": "@projeto",
+      "dialog_node": "node_3_1717787613292"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, voce entrou para a equipe $equipe"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1717712031418",
+      "context": {
+        "equipe": "@equipe"
+      },
+      "conditions": "@equipe:(Mar Azul) or @equipe:(Guardiões do Mar)",
+      "dialog_node": "node_4_1717712083385"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja entrar em uma equipe no projeto limpeza oceanica, por favor me informe o nome da equipe"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1717711902330",
+      "conditions": "@projeto:(Conservação dos Corais)",
+      "dialog_node": "node_4_1717786464066",
+      "previous_sibling": "node_9_1717712031418"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, a qual equipe voce deseja adicionar a tarefa?\n-Protetores dos Corais\n-Coral Vivo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1717786583823",
+      "conditions": "@projeto:(Limpeza Oceanica)",
+      "dialog_node": "node_4_1717786636984"
+    },
+    {
+      "type": "standard",
+      "title": "configurar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja configurar o modo do chatbot, por favor escolha entre PADRAO, VOZ ou TEXTO"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#configurar_modo",
+      "dialog_node": "node_5_1717695117943",
+      "previous_sibling": "node_8_1717711902330"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, vamos adicionar uma tarefa a equipe $equipe, qual a tarefa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1717786636984",
+      "conditions": "@equipe:(Guardiões do Mar) || @equipe:(Mar Azul)",
+      "dialog_node": "node_5_1717786874865"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, e qual a data final da tarefa?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1717786874865",
+      "conditions": "@tarefa",
+      "dialog_node": "node_5_1717786927265"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, o modo foi configurado para $configuracao"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1717695117943",
+      "context": {
+        "configuracao": "@configuracao"
+      },
+      "conditions": "@configuracao",
+      "dialog_node": "node_6_1717711716220"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja adicionar uma nova tarefa, por favor informe o projeto:\n-Limpeza Oceanica\n-Conservação dos Corais"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#adicionar_tarefa",
+      "dialog_node": "node_6_1717786583823",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "entrar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja entrar em uma equipe, por favor, me informe o projeto o qual deseja criar uma equipe\n-Limpeza Oceânica\n-Conservação de Corais"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#participar_equipe",
+      "dialog_node": "node_8_1717711902330",
+      "previous_sibling": "node_8_1717787581992"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, voce entrou para a equipe $equipe"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1717786464066",
+      "context": {
+        "equipe": "@equipe"
+      },
+      "conditions": "@equipe:(Protetores dos Corais) || @equipe:(Coral Vivo)",
+      "dialog_node": "node_8_1717786485561"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, qual projeto voce deseja saber a situação?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#acompanhar_situacao",
+      "dialog_node": "node_8_1717787581992",
+      "previous_sibling": "node_9_1717787506713"
+    },
+    {
+      "type": "standard",
+      "title": "criar projeto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja criar um projeto, para isso, voce precisa ser um administrador, caso seja, vá em Projetos->Criar Projeto"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#criacao_projetos",
+      "dialog_node": "node_9_1717711831991",
+      "previous_sibling": "node_6_1717786583823"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja entrar em uma equipe no projeto limpeza oceanica, por favor me informe o nome da equipe\n-Guardiões do Mar\n-Mar Azul"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1717711902330",
+      "context": {},
+      "conditions": "@projeto:(Limpeza Oceanica)",
+      "dialog_node": "node_9_1717712031418"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi, voce deseja se inscrever em um projeto, para isso, va na aba PROJETOS, la voce vera todos os projetos disponiveis, assim, voce pode escolher o que te agradar, ai basta clicar no botao \"inscrever-se\" e esta feito!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#inscricao_projeto",
+      "dialog_node": "node_9_1717787506713",
+      "previous_sibling": "node_9_1717711831991"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "",
+  "name": "BluePlan-dialog"
+}

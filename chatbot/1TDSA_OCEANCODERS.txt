@@ -1,2 +1,18 @@
 Gustavo Araujo - RM 555277
 Samuel Maragato - RM 556731
+
+Video: https://youtu.be/oYE_hOxCDaQ
+
+STT
+	API_KEY Da_xGqsf7b7I_VDHBjBDcrQOnvPFSL-OLYYOnhfLCptW
+	ENDPOINT https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/d3d93f4d-fafa-443c-bb6e-2033152b8b92
+TTS
+	API_KEY MhGhVj3-svlIda6na_hUCBi_TjJ1qh_19xkNjYhf-ST0
+	ENDPOINT https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/bf92e5a8-2534-4b88-9957-e003878529fb
+Assistant
+	API_KEY CFG_rXmsQjVFEMpms-p1ykLSkUqa4TOHj6gXNMzg77uX
+	ENDPOINT https://api.us-south.assistant.watson.cloud.ibm.com/instances/ec4c7774-007c-4ff9-800b-b9bd98c9fd65
+	ASSISTANT_ID 64ca0ef2-f356-4b00-ac6d-0e1495992afb
+TELEGRAM
+	BOT_ID blueplan_bot
+	TOKEN 7269699145:AAGaZhurGgb-NGWq_Em43eYtG0WpTK_E4No
