@@ -1,4 +1,9 @@
+#classes do projeto, adicionadas para facilidade de codigo e para condizer com as materias de Banco de dados
+#e domain driven design
+
+#classe usuario, com atributos id, nome, email e senha
 class Usuario:
+    #eu adicionei um contador a todas as classes para replicar o comportamento do autoincrement de um banco :)
     contador_id = 0
     def __init__(self, nome, email, senha):
         self.id = Usuario.contador_id
@@ -7,6 +12,13 @@ class Usuario:
         self.nome = nome
         self.email = email
         self.senha = senha
+
+#classe admin, que herda de usuario, usada para verificação de permissao
+class Admin(Usuario):
+    def __init__(self, nome, email, senha):
+        super().__init__(nome, email, senha)
+
+#classe projeto, a classe principal da solucao
 class Projeto:
     contador_id = 0
     def __init__(self, nome, descricao, criador, localizacao):
@@ -19,6 +31,7 @@ class Projeto:
         self.localizacao = localizacao
         self.equipes = []
         self.tarefas = []
+    #sobrescrita do metodo toString para nao precisar de varios prints nos outros metodos
     def __str__(self) -> str:
         return (f"\n{self.id + 1}."
             f"\nProjeto: {self.nome}" 
@@ -57,21 +70,13 @@ class Equipe:
         for tarefa in self.tarefas:
             retorno += f"\n{tarefa.nome}: {tarefa.descricao} - {tarefa.data_inicio} até {tarefa.data_fim}"
         return retorno
-class Admin:
-    contador_id = 0
-    def __init__(self, nome, email, senha):
-        self.id = Admin.contador_id
-        Admin.contador_id += 1
-
-        self.nome = nome
-        self.email = email
-        self.senha = senha
 class Endereco:
     def __init__(self, logradouro, numero, cep, complemento):
         self.logradouro = logradouro
         self.numero = numero
         self.cep = cep
         self.complemento = complemento
+#lista de usuarios, ja começa com um admin que é o padrao
 usuarios = [Admin("admin", "admin@admin.com", "admin123")]
 projetos = []
 
@@ -83,17 +88,17 @@ def login_criar_conta():
     if opcao == "1":
         email = input("Email: ")
         senha = input("Senha: ")
+        #verifica se o usuario esta na lista e se a senha condiz
         for usuario in usuarios:
             if usuario.email == email and usuario.senha == senha:
                 print(f"\nBem-vindo, {usuario.nome}!")
                 return usuario
         print("\nCredenciais inválidas!")
-
+    #cria um novo usuario
     elif opcao == "2":
         nome = input("Nome: ")
         email = input("Email: ")
         senha = input("Senha: ")
-        id = len(usuarios) + 1
         novo_usuario = Usuario(nome, email, senha)
         usuarios.append(novo_usuario)
         print("Conta criada com sucesso!")
@@ -103,14 +108,15 @@ def login_criar_conta():
 
 # Função para criar projeto
 def criar_projeto(usuario):
+    #verificacao se o usuario é admin
     if isinstance(usuario, Admin):
         nome = input("Nome do projeto: ")
         descricao = input("Descrição do projeto: ")
         logradouro = input("Logradouro: ")
-        cidade = input("Numero: ")
+        numero = input("Numero: ")
         cep = input("CEP: ")
         complemento = input("Complemento: ")
-        localizacao = Endereco(logradouro, cidade, cep, complemento)
+        localizacao = Endereco(logradouro, numero, cep, complemento)
         novo_projeto = Projeto(nome, descricao, usuario, localizacao)
         print("Projeto criado com sucesso!")
         projetos.append(novo_projeto)
@@ -141,6 +147,7 @@ def adicionar_tarefa(projeto, index_equipe, usuario):
         print("Apenas administradores e criadores de projeto podem adicionar tarefas.")
 
 def entrar_equipe(projeto, index_equipe, usuario):
+    #validacao de entrada de usuario
     if(index_equipe >= len(projeto.equipes)):
         print("Equipe não encontrada!")
         return
@@ -157,6 +164,7 @@ def status_projeto(projeto):
 # Menu principal
 def menu_principal():
     usuario_logado = None
+    #estrutura de repeticao para o menu, funciona ate o usuario escolher sair
     while True:
         print("\nMenu Principal")
         print("1. Login/Criar Conta")
@@ -172,9 +180,12 @@ def menu_principal():
         
         if opcao == "1":
             usuario_logado = login_criar_conta()
-        elif opcao == "2" and usuario_logado and isinstance(usuario_logado, Admin):
+        elif opcao == "2" and usuario_logado:
+            #nesse caso a verificacao de permissao é feita dentro da funcao
             criar_projeto(usuario_logado)
+        #ja nesse, é feita anteriormente
         elif opcao == "3" and usuario_logado and isinstance(usuario_logado, Admin):
+            #verificacao se pelo menos existe algum projeto
             if len(projetos) == 0:
                 print("Nenhum projeto disponível!")
                 continue
@@ -184,6 +195,7 @@ def menu_principal():
 
             index_projeto = int(input("Escolha um projeto: ")) - 1
 
+            #verificacao se o projeto existe
             if(index_projeto >= len(projetos) or index_projeto < 0):
                 print("Projeto não encontrado!")
                 continue
@@ -191,6 +203,7 @@ def menu_principal():
             criar_equipe(projetos[index_projeto], usuario_logado)
         elif opcao == "4" and usuario_logado and isinstance(usuario_logado, Admin):
 
+            #novamente, mesmas verificacoes da funcao anterior
             if len(projetos) == 0:
                 print("Nenhum projeto disponível!")
                 continue
@@ -204,6 +217,7 @@ def menu_principal():
                 print("Projeto não encontrado!")
                 continue
 
+            #aqui ja temos uma verificacao diferente, agora para o numero de equipes
             if(len(projetos[index_projeto].equipes) == 0):
                 print("Nenhuma equipe disponível!")
                 continue
@@ -213,12 +227,15 @@ def menu_principal():
                 
             index_equipe = int(input("Escolha uma equipe: ")) - 1
 
+            #mesma logica da verificacao de projetos, mas para equipes
             if(index_equipe >= len(projeto.equipes) or index_equipe < 0):
                 print("Equipe não encontrada!")
                 continue
             
             adicionar_tarefa(projetos[index_projeto], index_equipe, usuario_logado)
+    
         elif opcao == "5" and usuario_logado:
+            #mesma logica dos demais
             if len(projetos) == 0:
                 print("Nenhum projeto disponível!")
                 continue
